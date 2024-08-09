@@ -15,7 +15,7 @@ body {
 
 @layer base {
   :root {
-    --primary: #000;
+    --primary: #000000;
     --secondary: #ffffff;
     --thirdcolor:#000000e0;
 

@@ -4,7 +4,7 @@ import { GridBackgroundDemo } from './ui/Bg'
 const Hero = () => {
   return (
     <div className=' w-screen'>
-      <GridBackgroundDemo/>
+      <GridBackgroundDemo  />
     </div>
   )
 }
