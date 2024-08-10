@@ -1,15 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import {
-  HoveredLink,
-  Menu,
-  MenuItem,
-} from "@/components/ui/navbar-menu";
+import { HoveredLink, Menu, MenuItem } from "@/components/ui/navbar-menu";
 import { cn } from "@/lib/utils";
 
 export function NavbarDemo() {
   return (
-    <div className="relative w-full flex items-center justify-center">
+    <div className=" w-full flex items-center justify-center">
       <Navbar className="top-7 " />
     </div>
   );
@@ -20,35 +16,13 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "absolute top-10 inset-x-0 lg:max-w-xl max-w-md mx-auto z-50",
+        "absolute top-10 inset-x-0 lg:max-w-[40vw] mx-auto max-w-[80vw] left-[1rem] z-50",
         className
       )}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Home">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Products">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
-          </div>
-        </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
+        <HoveredLink href="/">Home</HoveredLink>
+
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
@@ -57,6 +31,8 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/branding">Branding</HoveredLink>
           </div>
         </MenuItem>
+        <HoveredLink href="/about">About</HoveredLink>
+        <HoveredLink href="/contact">Contact</HoveredLink>
       </Menu>
     </div>
   );

@@ -10,7 +10,7 @@ export function GridBackgroundDemo() {
       <div className="z-10 p-24 justify-center items-center h-screen lg:pt-7 pt-14  w-screen lg:p-12 flex flex-col lg:flex-row ">
         <div className="first p-4 flex flex-col  w-[95vw] lg:w-[55vw] h-[60vh] ">
           <div>
-            <TextGenerateEffectDemo />
+            <TextGenerateEffectDemo  />
           </div>
         </div>
         <div className="second  mt-7 lg:flex hidden lg:justify-end">
