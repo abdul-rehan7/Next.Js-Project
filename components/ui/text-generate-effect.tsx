@@ -59,7 +59,7 @@ export const TextGenerateEffect = ({
               key={word + idx}
               className={` ${
                 idx > 3 ? "text-black-300" : "dark:text-white text-white"
-              } font-extrabold lg:text-8xl text-7xl leading-tight tracking-wide  opacity-0`}
+              } font-extrabold lg:text-7xl text-6xl leading-tight tracking-wide  opacity-0`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}

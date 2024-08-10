@@ -16,7 +16,7 @@ export function GridBackgroundDemo() {
         <div className="second  mt-7 lg:flex hidden lg:justify-end">
           <img
             src="/hero-item.svg"
-            className="lg:w-[38rem]  overflow-x-hidden lg:h-[38rem] h-[20rem] w-[20rem]"
+            className="lg:w-[35rem] lg:h-[35rem] overflow-x-hidden  h-[20rem] w-[20rem]"
             alt=""
           />
         </div>
