@@ -36,16 +36,17 @@ export function HoverBorderGradient({
   };
 
   const movingMap: Record<Direction, string> = {
-    TOP: "radial-gradient(20.7% 50% at 50% 0%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
-    LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+    TOP: "radial-gradient(30% 50% at 50% 0%, hsl(0, 0%, 0%) 0%, rgba(0, 0, 0, 0) 100%)", // Increase the width (from 20.7% to 30%)
+    LEFT: "radial-gradient(25% 43.1% at 0% 50%, hsl(0, 0%, 0%) 0%, rgba(0, 0, 0, 0) 100%)", // Increase the width (from 16.6% to 25%)
     BOTTOM:
-      "radial-gradient(20.7% 50% at 50% 100%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+      "radial-gradient(30% 50% at 50% 100%, hsl(0, 0%, 0%) 0%, rgba(0, 0, 0, 0) 100%)", // Increase the width (from 20.7% to 30%)
     RIGHT:
-      "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(0, 0%, 100%) 0%, rgba(255, 255, 255, 0) 100%)",
+      "radial-gradient(25% 41.2% at 100% 50%, hsl(0, 0%, 0%) 0%, rgba(0, 0, 0, 0) 100%)", // Increase the width (from 16.2% to 25%)
   };
-
+  
   const highlight =
-    "radial-gradient(75% 181.15942028985506% at 50% 50%, #3275F8 0%, rgba(255, 255, 255, 0) 100%)";
+    "radial-gradient(80% 181.15942028985506% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0) 100%)"; // Increase the width (from 75% to 80%)
+  
 
   useEffect(() => {
     if (!hovered) {
@@ -62,14 +63,14 @@ export function HoverBorderGradient({
       }}
       onMouseLeave={() => setHovered(false)}
       className={cn(
-        "relative flex rounded-xl   border-2 border-[#535353] content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
+        "relative flex rounded-xl   border-2  content-center bg-black/20 hover:bg-black/10 transition duration-500 dark:bg-white/20 items-center flex-col flex-nowrap gap-10 h-min justify-center overflow-visible p-px decoration-clone w-fit",
         containerClassName
       )}
       {...props}
     >
       <div
         className={cn(
-          "w-auto text-white lg:text-xl text-base font-normal  z-10 bg-black px-6 py-3 rounded-xl",
+          "w-auto text-black lg:text-xl text-base font-normal  z-10 bg-white px-6 py-3 rounded-xl",
           className
         )}
       >

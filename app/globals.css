@@ -17,7 +17,7 @@ body {
   :root {
     --primary: #000000;
     --secondary: #ffffff;
-    --thirdcolor:#61d032e0;
+    --third:#61d032e0;
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;

@@ -1,6 +1,24 @@
+import { TabsDemo } from "@/components/Tabs";
 import React from "react";
 
 const page = () => {
+  const tabs = [
+    {
+      title: "Tab 1",
+      value: "tab1",
+      content: <div className="bg-black w-[50vw]"></div>,
+    },
+    {
+      title: "Tab 2",
+      value: "tab2",
+      content: <div>Content for Tab 2</div>,
+    },
+    {
+      title: "Tab 3",
+      value: "tab3",
+      content: <div className="text-black">Content for Tab 3</div>,
+    },
+  ];
   return (
     <div className="w-[100vw]">
       <section
@@ -14,6 +32,9 @@ const page = () => {
             Transforming Tech.
           </h1>
         </div>
+      </section>
+      <section className="tabs flex mx-auto justify-center items-center">
+        <TabsDemo  /> 
       </section>
     </div>
   );

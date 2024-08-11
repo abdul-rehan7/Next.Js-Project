@@ -3,22 +3,22 @@ import React from "react";
 const page = () => {
   return (
     <div className="w-[100vw]">
-
-    {/* TOP PART */}
-    <div
-      className="third w-full   flex items-center text-center bg-center bg-cover bg-no-repeat justify-center md:h-[80vh] h-[10rem] bg-[#000000c0]"
-      style={{
-        backgroundImage: `url(${"/contact.jpg"}) `,
-        backgroundBlendMode: "overlay",
-      }}
-    >
-      <div className="text-xl lg:text-4xl font-bold text-white absolute opacity-100  lg:w-[60%] w-[90%]">
-        “Being human in the digital world is about building a digital world
-        for humans”
-      </div>
+      <section
+        style={{ backgroundImage: `url(${"/texture.jpg"})` }}
+        className={`flex bg-center bg-cover bg-no-repeat flex-col lg:flex-row justify-center bg-green-500 items-center pt-24 p-10  lg:h-[50vh] h-auto w-screen`}
+      >
+        <div className="first h-full flex flex-col text-center justify-center py-16    space-y-5 lg:w-[90vw]  w-[95vw]  lg:p-14 p-7">
+          <h1 className="text-5xl font-bold">
+            Tell us What&apos;s on
+            <span className="text-blue-500"> your Mind</span>
+          </h1>
+          <p className="text-lg">
+            Give us a few minutes, and we&apos;ll give you clarity and direction
+            about your tech needs.
+          </p>
+        </div>
+      </section>
     </div>
-  
-  </div>
   );
 };
 
