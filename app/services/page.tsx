@@ -33,8 +33,11 @@ const page = () => {
           </h1>
         </div>
       </section>
-      <section className="tabs flex mx-auto justify-center items-center">
+      <section className="tabs flex mx-auto h-auto justify-center items-center">
         <TabsDemo  /> 
+      </section>
+      <section className="tabs h-[50rem] w-screen bg-green-500 flex mx-auto justify-center items-center">
+        
       </section>
     </div>
   );

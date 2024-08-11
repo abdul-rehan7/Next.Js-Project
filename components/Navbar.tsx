@@ -41,7 +41,7 @@ function Navbar({ className }: { className?: string }) {
           className="py-3 px-5 hover:text-white hover:bg-black text-black transition-all rounded-full border-2 border-black"
           href="/www.linkedin.com"
         >
-          Get Started +
+          Get Started 
         </a>
       </div>
       <div className="lg:hidden">

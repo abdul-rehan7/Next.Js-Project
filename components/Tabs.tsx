@@ -9,7 +9,7 @@ export function TabsDemo() {
       title: "Product",
       value: "product",
       content: (
-        <div className="  lg:w-[85vw] w-[80vw] overflow-hidden relative h-auto rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
+        <div className="  lg:w-[85vw] w-[85vw] overflow-hidden relative h-auto rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
           <p>Product Tab here</p>
         </div>
       ),
@@ -18,7 +18,7 @@ export function TabsDemo() {
       title: "Services",
       value: "services",
       content: (
-        <div className="  lg:w-[85vw] w-[80vw]  overflow-hidden relative h-auto rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
+        <div className="  lg:w-[85vw] w-[85vw]  overflow-hidden relative h-auto rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
           <p>Services tab</p>
         </div>
       ),
@@ -27,7 +27,7 @@ export function TabsDemo() {
       title: "Playground",
       value: "playground",
       content: (
-        <div className="lg:w-[85vw] w-[80vw]   overflow-hidden relative h-auto rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
+        <div className="lg:w-[85vw] w-[85vw]   overflow-hidden relative h-auto rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
           <p>Playground tab</p>
         </div>
       ),
@@ -36,7 +36,7 @@ export function TabsDemo() {
       title: "Content",
       value: "content",
       content: (
-        <div className="lg:w-[85vw] w-[80vw]  flex justify-start overflow-hidden  h-auto rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
+        <div className="lg:w-[85vw] w-[85vw]  flex justify-start overflow-hidden  h-auto rounded-2xl p-10 text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
           <p>Content tab</p>
         </div>
       ),
@@ -45,7 +45,7 @@ export function TabsDemo() {
       title: "Random",
       value: "random",
       content: (
-        <div className="lg:w-[85vw] w-[80vw]  overflow-hidden p-10  h-auto rounded-2xl  text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
+        <div className="lg:w-[85vw] w-[85vw]  overflow-hidden p-10  h-auto rounded-2xl  text-xl md:text-4xl font-bold text-black bg-gradient-to-b from-gray-200 to-gray-300">
           <p>Random tab</p>
           <div className="bg-red-500 h-[20rem] w-[20rem]"></div>
     
@@ -55,7 +55,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative  flex flex-col max-w-md lg:max-w-6xl  w-full  items-center justify-start lg:py-20 py-10">
+    <div className="h-[45rem] md:h-[50rem] [perspective:1000px] relative  flex flex-col max-w-md lg:max-w-6xl  w-full  items-center justify-start lg:py-20 py-10">
       <Tabs tabs={tabs} />
     </div>
   );
