@@ -21,7 +21,7 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "absolute lg:px-20 px-7 py-6 flex justify-between items-center bg-[#eeeeeed5] inset-x-0 max-w-[100vw] ",
+        "absolute lg:px-20 px-7 py-6 flex justify-between items-center bg-[#eeeeeeec] inset-x-0 max-w-[100vw] ",
         className
       )}
     >
@@ -73,16 +73,16 @@ function Navbar({ className }: { className?: string }) {
             <Link
               onClick={() => setIsOpen(false)}
               className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="/about"
+              href="/projects"
             >
-              About
+              Projects
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
               className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="/services"
+              href="/about"
             >
-              Services
+              About
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
