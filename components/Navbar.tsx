@@ -31,7 +31,7 @@ function Navbar({ className }: { className?: string }) {
       <div className="hidden space-x-10 text-lg lg:block">
         
           <HoveredLink href="/">Home</HoveredLink>
-          <HoveredLink href="/services">Services</HoveredLink>
+          <HoveredLink href="/projects">Projects</HoveredLink>
           <HoveredLink href="/about">About</HoveredLink>
           <HoveredLink href="/contact">Contact</HoveredLink>
       
@@ -54,39 +54,39 @@ function Navbar({ className }: { className?: string }) {
           <div className="line bg-black w-7 h-1 rounded-full"></div>
         </div>
         {isOpen && (
-          <div className="links flex flex-col text-2xl w-[100vw] h-[70vh]  top-0 right-0 bg-white absolute py-4 px-11 space-y-4">
+          <div className="links flex flex-col text-2xl w-[100vw] h-[100vh]  top-0 right-0 bg-gray-300 absolute py-2 px-7 space-y-4">
             <div className="cursor-pointer py-5  font-bold flex items-center justify-between">
               <span>
               DevelopersFleet
               </span>
               <span onClick={() => setIsOpen(false)}>
-                <IoClose className="text-4xl" />
+                <IoClose className="text-2xl" />
               </span>
             </div>
             <Link
               onClick={() => setIsOpen(false)}
-              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-300"
+              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
               href="/"
             >
               Home
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
-              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-300"
+              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
               href="/about"
             >
               About
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
-              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-300"
+              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
               href="/services"
             >
               Services
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
-              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-300"
+              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
               href="/contact"
             >
               Contact

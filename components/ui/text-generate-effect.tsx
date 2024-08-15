@@ -59,7 +59,7 @@ export const TextGenerateEffect = ({
               key={word + idx}
               className={` ${
                 idx > 3 ? "text-[var(--third)]" : "text-black"
-              } font-extrabold lg:text-7xl text-6xl leading-tight tracking-wide  opacity-0`}
+              } font-extrabold lg:text-7xl text-4xl leading-tight tracking-wide  opacity-0`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
@@ -79,7 +79,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={para + idx}
-              className="font-light lg:text-2xl text-sm leading-snug tracking-wide text-black opacity-0"
+              className="font-light lg:text-2xl text-xs leading-snug tracking-wide text-black opacity-0"
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
