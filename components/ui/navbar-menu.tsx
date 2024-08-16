@@ -78,11 +78,11 @@ export const Menu = ({
 
 export const HoveredLink = ({ children, ...rest }: any) => {
   return (
-    <Link
+    <a
       {...rest}
       className="text-black hover:text-[var(--third)] "
     >
       {children}
-    </Link>
+    </a>
   );
 };

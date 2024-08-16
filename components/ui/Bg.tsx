@@ -3,12 +3,12 @@ import { TextGenerateEffectDemo } from "@/components/TextGen";
 
 export function GridBackgroundDemo() {
   return (
-    <div className="lg:h-[50rem] h-[45rem]  py-5 w-full bg-white bg-grid-black/[0.1] relative flex items-center justify-center">
+    <div className="lg:h-[50rem] h-[70vh]  py-5 w-full bg-white bg-grid-black/[0.1] relative flex items-center justify-center">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
       <div className="z-10 p-24 justify-center items-center h-screen lg:pt-7 pt-14  w-screen lg:p-12 flex flex-col lg:flex-row ">
-        <div className="first p-4 flex flex-col  w-[95vw] lg:w-[55vw] h-[60vh] ">
+        <div className="first p-4 flex flex-col  w-[95vw] lg:w-[55vw] lg:h-[60vh] h-[30vh] ">
           <div>
             <TextGenerateEffectDemo  />
           </div>

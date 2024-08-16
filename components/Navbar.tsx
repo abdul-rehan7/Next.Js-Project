@@ -21,7 +21,7 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "absolute lg:px-20 px-7 py-6 flex justify-between items-center bg-[#eeeeeeec] inset-x-0 max-w-[100vw] ",
+        " absolute lg:px-20 px-7 py-6 flex justify-between items-center bg-transparent inset-x-0 max-w-[100vw] ",
         className
       )}
     >
@@ -30,10 +30,10 @@ function Navbar({ className }: { className?: string }) {
       </div>
       <div className="hidden space-x-10 text-lg lg:block">
         
-          <HoveredLink href="/">Home</HoveredLink>
-          <HoveredLink href="/projects">Projects</HoveredLink>
-          <HoveredLink href="/about">About</HoveredLink>
-          <HoveredLink href="/contact">Contact</HoveredLink>
+          <HoveredLink href="#home">Home</HoveredLink>
+          <HoveredLink href="#projects">Projects</HoveredLink>
+          <HoveredLink href="#about">About</HoveredLink>
+          <HoveredLink href="#contact">Contact</HoveredLink>
       
       </div>
       <div className="button hidden lg:block">
@@ -66,28 +66,28 @@ function Navbar({ className }: { className?: string }) {
             <Link
               onClick={() => setIsOpen(false)}
               className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="/"
+              href="#home"
             >
               Home
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
               className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="/projects"
+              href="#projects"
             >
               Projects
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
               className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="/about"
+              href="#about"
             >
               About
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
               className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="/contact"
+              href="#contact"
             >
               Contact
             </Link>
