@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-  
 html,
 body {
   margin: 0;
@@ -19,7 +14,7 @@ body {
   :root {
     --primary: #000000;
     --secondary: #ffffff;
-    --third:#61d032e0;
+    --third: #61d032e0;
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -105,3 +100,49 @@ body {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+
+.cssbutton {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cssbutton:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #000000; /* Adjusted color for background */
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+
+.cssbutton:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #303030;
+  border-radius: 10rem;
+  z-index: -2;
+}
+
+.cssbutton:hover {
+  color: #fff;
+}
+
+.cssbutton:hover:before {
+  width: 100%;
+}
+

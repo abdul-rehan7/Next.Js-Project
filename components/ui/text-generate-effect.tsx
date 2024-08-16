@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "framer-motion";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+
 import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({
@@ -100,7 +100,13 @@ export const TextGenerateEffect = ({
             {renderWords()}
             {renderPara()}
           </div>
-          <HoverBorderGradient />
+          <a
+            href="https://www.linkedin.com/in/abdul-rehan/"
+            target="_blank"
+            className="cssbutton"
+          >
+            Let&apos;s Connect
+          </a>
         </div>
       </div>
     </div>
