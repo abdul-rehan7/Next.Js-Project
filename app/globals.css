@@ -14,7 +14,7 @@ body {
   :root {
     --primary: #000000;
     --secondary: #ffffff;
-    --third: #61d032e0;
+    --third: #004cd8e0;
 
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -146,3 +146,25 @@ body {
   width: 100%;
 }
 
+.link{
+  position: relative;
+  padding: 6px;
+}
+.link::after{
+  content: "";
+  background: var(--third);
+  height: 2px;
+  border-radius: 10rem;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  position: absolute;
+}
+.link:hover{
+  color: var(--third);
+}
+
+.link:hover::after{
+  width: 100%;
+  transition: 0.4s;
+}

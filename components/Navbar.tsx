@@ -25,23 +25,27 @@ function Navbar({ className }: { className?: string }) {
         className
       )}
     >
-      <div className="text-black text-2xl font-semibold  ">
-       DevelopersFleet
-      </div>
+      <a href="#home" className="text-black text-2xl font-semibold  ">DevelopersFleet</a>
       <div className="hidden space-x-10 text-lg lg:block">
-        
-          <HoveredLink href="#home">Home</HoveredLink>
-          <HoveredLink href="#projects">Projects</HoveredLink>
-          <HoveredLink href="#about">About</HoveredLink>
-          <HoveredLink href="#contact">Contact</HoveredLink>
-      
+        <a href="#home" className="link">
+          Home
+        </a>
+        <a href="#projects" className="link">
+          Projects
+        </a>
+        <a href="#about" className="link">
+          About
+        </a>
+        <a href="#contact" className="link">
+          Contact
+        </a>
       </div>
       <div className="button hidden lg:block">
         <a
           className="py-3 px-5 hover:text-white hover:bg-black text-black transition-all rounded-full border-2 border-black"
           href="/www.linkedin.com"
         >
-          Get Started 
+          Get Started
         </a>
       </div>
       <div className="lg:hidden">
@@ -54,43 +58,46 @@ function Navbar({ className }: { className?: string }) {
           <div className="line bg-black w-7 h-1 rounded-full"></div>
         </div>
         {isOpen && (
-          <div className="links flex flex-col text-2xl w-[100vw] h-[100vh]  top-0 right-0 bg-gray-300 absolute py-2 px-7 space-y-4">
+          <div className="links flex flex-col text-2xl w-[100vw] h-[100vh]  top-0 right-0 bg-gray-300 absolute py-2 px-9 space-y-4">
             <div className="cursor-pointer py-5  font-bold flex items-center justify-between">
-              <span>
-              DevelopersFleet
-              </span>
+              <span>DevelopersFleet</span>
               <span onClick={() => setIsOpen(false)}>
                 <IoClose className="text-2xl" />
               </span>
             </div>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="#home"
-            >
-              Home
-            </Link>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="#projects"
-            >
-              Projects
-            </Link>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="#about"
-            >
-              About
-            </Link>
-            <Link
-              onClick={() => setIsOpen(false)}
-              className="text-black hover:text-green-500 border-b-[1px] py-3 border-gray-400"
-              href="#contact"
-            >
-              Contact
-            </Link>
+
+            <div className="w-[100%] flex flex-col justify-center py-7 items-center ">
+              <div className="flex text-center flex-col space-y-4">
+                <a
+                  onClick={() => setIsOpen(false)}
+                  className="link text-black w-full py-3 "
+                  href="#home"
+                >
+                  Home
+                </a>
+                <a
+                  onClick={() => setIsOpen(false)}
+                  className="link text-black w-full py-3 "
+                  href="#projects"
+                >
+                  Projects
+                </a>
+                <a
+                  onClick={() => setIsOpen(false)}
+                  className="link text-black w-full py-3 "
+                  href="#about"
+                >
+                  About
+                </a>
+                <a
+                  onClick={() => setIsOpen(false)}
+                  className="link text-black w-full py-3 "
+                  href="#contact"
+                >
+                  Contact
+                </a>
+              </div>
+            </div>
           </div>
         )}
       </div>
