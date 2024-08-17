@@ -148,23 +148,22 @@ body {
 
 .link{
   position: relative;
-  padding: 6px;
+  padding: 3px;
+  transition-duration: 0.2s;
+}
+.link:hover{
+  color: aqua;
 }
 .link::after{
   content: "";
-  background: var(--third);
-  height: 2px;
-  border-radius: 10rem;
+  position: absolute;
   bottom: 0;
   left: 0;
-  width: 0%;
-  position: absolute;
+  background: aqua;
+  height: 2px;
+  width: 0;
 }
-.link:hover{
-  color: var(--third);
-}
-
 .link:hover::after{
   width: 100%;
-  transition: 0.4s;
+  transition-duration: 0.5s;
 }
