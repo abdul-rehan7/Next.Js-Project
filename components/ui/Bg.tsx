@@ -15,7 +15,7 @@ export function GridBackgroundDemo() {
       <div className="absolute  inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
       <div className="z-[10] p-24 justify-center items-center lg:text-left text-center h-screen lg:pt-7 pt-14  w-screen lg:p-12 flex flex-col lg:flex-row ">
-        <div className="first p-4 flex flex-col  w-[80vw] lg:w-[55vw] lg:h-[60vh] h-[30vh] ">
+        <div className="first p-4 flex flex-col  w-[90vw] lg:w-[55vw] lg:h-[60vh] h-[30vh] ">
           <div >
             <TextGenerateEffectDemo />
           </div>
