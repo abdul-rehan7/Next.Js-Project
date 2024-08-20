@@ -6,7 +6,12 @@ export default function Home() {
   return (
     <main id="home" className="flex  flex-col items-center justify-between ">
       <Hero />
-      <div className="stack w-screen h-[10rem] bg-black-200 flex  justify-between p-7"></div>
+      <div className="stack w-screen lg:h-[10rem] h-[5rem] bg-black-200 flex  justify-between p-2 lg:p-10">
+        <img className="lg:w-[12rem] w-[4rem]" src="/ts.svg" alt="" />
+        <img className="lg:w-[12rem] w-[4rem]" src="/next.svg" alt="" />
+        <img className="lg:w-[12rem] w-[4rem]" src="/react.svg" alt="" />
+        <img className="lg:w-[12rem] w-[4rem]" src="/tail.svg" alt="" />
+      </div>
       <div id="projects" className="bg-black-100 w-screen h-auto p-4 ">
         <Projects />
       </div>
