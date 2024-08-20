@@ -29,8 +29,8 @@ const config = {
       colors: {
         black: {
           DEFAULT: "#000",
-          100: "#f7f7f5",
-          200: "#0a091f",
+          100: "#1c1c1c",
+          200: "#242424",
           300: "#707070",
         },
         white: {
@@ -180,7 +180,7 @@ const config = {
           }),
           "bg-dot": (value: any) => ({
             backgroundImage: `url("${svgToDataUri(
-              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
             )}")`,
           }),
         },

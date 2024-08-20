@@ -58,8 +58,8 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               className={` ${
-                idx > 3 ? "text-[var(--third)]" : "text-black"
-              } font-medium lg:text-7xl text-4xl leading-tight text-center tracking-wide  opacity-0`}
+                idx > 3 ? "text-black-300" : "text-white"
+              } font-normal  lg:leading-tight leading-8  text-center  tracking-wide  opacity-0`}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
@@ -79,7 +79,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={para + idx}
-              className="font-light lg:text-xl text-xs leading-snug tracking-wide text-black opacity-0"
+              className="font-light lg:text-xl text-xs leading-snug tracking-wide text-black-300 opacity-0"
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
@@ -95,18 +95,13 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div >
-        <div className="flex lg:items-start items-center  lg:justify-start justify-center flex-col space-y-7  ">
-          <div>
-            {renderWords()}
+        <div className="flex items-center  text-center justify-center flex-col space-y-7  ">
+          <div className="flex flex-col items-center space-y-4">
+        
             {renderPara()}
+            {renderWords()}
           </div>
-          <a
-            href="https://www.linkedin.com/in/abdul-rehan/"
-            target="_blank"
-            className="cssbutton"
-          >
-            Let&apos;s Connect
-          </a>
+  
         </div>
       </div>
     </div>

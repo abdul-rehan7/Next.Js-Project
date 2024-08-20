@@ -1,9 +1,9 @@
 "use client";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
-const words = `Make Your Website Look 10x Better`;
-const paragraph = 'Discover the best solutions tailored to your needs. Our team is dedicated to providing top-notch services and exceptional support.' 
+const words = `Building Digital Products, Brands and Experience`;
+const paragraph = "Hi, I'm Rehan" 
 
 export function TextGenerateEffectDemo() {
-  return <TextGenerateEffect words={words} para={paragraph} />;
+  return <TextGenerateEffect className="lg:text-5xl text-3xl" words={words} para={paragraph} />;
 }

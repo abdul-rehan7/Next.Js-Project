@@ -1,35 +1,45 @@
 "use client";
 import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
+import { IoIosMail } from "react-icons/io";
 
 const NewNav = () => {
   const [visible, setVisible] = useState(false);
 
   return (
     <>
-      <div className="bg-blue-100 absolute z-[20] px-6 py-3 flex justify-between items-center w-full">
-        <div className="logo text-2xl font-bold">Abdul Rehan</div>
+      <div className="bg-transparent  absolute z-[20] px-6 py-3 flex lg:justify-between justify-end  items-center w-full">
+        <div className="logo  hidden lg:flex items-center text-black-300 space-x-2  ">
+          <IoIosMail className="border text-2xl p-[4px] rounded-sm border-black-300 " />
+          <a href="mailto:abdulrehan0317@gmail.com" className=" text-base">
+            {" "}
+            contact@rehan.co
+          </a>
+        </div>
         <button
-          className="cursor-pointer text-white rounded lg:hidden"
+          className="cursor-pointer text-black-300 rounded lg:hidden"
           onClick={() => setVisible(true)} // Click handler to open the menu
         >
           <div className="burger flex flex-col space-y-1">
-            <div className="line bg-black h-1 w-7 rounded-full"></div>
-            <div className="line bg-black h-1 w-7 rounded-full"></div>
-            <div className="line bg-black h-1 w-7 rounded-full"></div>
+            <div className="line bg-black-300 h-1 w-7 rounded-full"></div>
+            <div className="line bg-black-300 h-1 w-7 rounded-full"></div>
+            <div className="line bg-black-300 h-1 w-7 rounded-full"></div>
           </div>
         </button>
-        <div className="lg:flex hidden space-x-5 p-2">
-          <a href="#home" className="link">
+        <div className="lg:flex hidden space-x-2 p-2">
+          <a href="#home" className="link text-black-300">
             Home
           </a>
-          <a href="#projects" className="link">
+          <span className="text-black-300 flex items-center">/</span>
+          <a href="#projects" className="link text-black-300">
             Projects
           </a>
-          <a href="#about" className="link">
+          <span className="text-black-300 flex items-center">/</span>
+          <a href="#about" className="link text-black-300">
             About
           </a>
-          <a href="#contact" className="link">
+          <span className="text-black-300 flex items-center">/</span>
+          <a href="#contact" className="link text-black-300">
             Contact
           </a>
         </div>
@@ -74,6 +84,15 @@ const NewNav = () => {
               onClick={() => setVisible(false)}
             >
               Contact
+            </a>
+          </div>
+          <div className="h-full flex flex-col justify-end">
+            <a
+              href="mailto:abdulrehan0317@gmail.com"
+              className="font-medium text-sm"
+            >
+              {" "}
+              contact@rehan.co
             </a>
           </div>
         </div>

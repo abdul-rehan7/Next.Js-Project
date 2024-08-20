@@ -104,7 +104,8 @@ body {
 .cssbutton {
   display: inline-block;
   padding: 0.75rem 1.25rem;
-  border-radius: 10rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(44, 44, 44);
   color: #ffffff;
   font-size: 1rem;
   transition: all 0.3s;
@@ -120,9 +121,9 @@ body {
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #2578fe; /* Adjusted color for background */
+  background-color: #252525; /* Adjusted color for background */
   transition: all 0.3s;
-  border-radius: 10rem;
+  border-radius: 0.5rem;
   z-index: -1;
 }
 
@@ -133,8 +134,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2d2d2d;
-  border-radius: 10rem;
+  background-color: #161616;
+  border-radius: 0.5rem;
   z-index: -2;
 }
 
@@ -152,18 +153,5 @@ body {
   transition-duration: 0.2s;
 }
 .link:hover{
-  color: #2578fe;
-}
-.link::after{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #2578fe;
-  height: 2px;
-  width: 0;
-}
-.link:hover::after{
-  width: 100%;
-  transition-duration: 0.5s;
+  color: #ffffff;
 }
