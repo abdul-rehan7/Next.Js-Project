@@ -84,7 +84,7 @@ export const TextGenerateEffect = ({
                 filter: filter ? "blur(10px)" : "none",
               }}
             >
-              {para}{" "}
+              {para}
             </motion.span>
           );
         })}
