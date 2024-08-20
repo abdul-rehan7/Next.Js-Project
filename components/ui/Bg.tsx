@@ -10,7 +10,7 @@ export function GridBackgroundDemo() {
     Aos.init();
   }, []);
   return (
-    <div className="lg:h-screen h-[95vh]  lg:py-0 py-7 w-full bg-black-100 bg-dot-white/[0.07] relative flex  justify-center">
+    <div className="lg:h-screen h-[95vh]  lg:py-0 py-7 w-full bg-black-100 bg-dot-white/[0.1] relative flex  justify-center">
       {/* Radial gradient for the container to give a faded look */}
       <div className="absolute  inset-0 flex items-center justify-center bg-black-100 [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 

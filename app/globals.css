@@ -100,7 +100,36 @@ body {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 }
+.wrapper {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  animation: scroll 20s linear infinite;
+}
+.wrapper-track{
+  display: flex;
+  width: calc(250px*18);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  scroll-snap-align: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 20px;
+  text-align: center;
+}
 
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px*9));
+  }
+}
 .cssbutton {
   display: inline-block;
   padding: 0.75rem 1.25rem;

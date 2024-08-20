@@ -9,7 +9,7 @@ export default function Projects() {
         {data.map((item, index) => (
           <div
             key={index}
-            className="card p-3 text-left flex flex-col space-y-3 items-start bg-black-200 border border-[#393939] rounded-md "
+            className=" p-3 text-left flex flex-col space-y-3 items-start bg-black-200 border border-[#393939] rounded-md "
           >
             <div className="div lg:h-[10rem]  h-[5rem]"></div>
             <h1 className="text-base  font-semibold text-white">
