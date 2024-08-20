@@ -6,12 +6,15 @@ export default function Projects() {
         Collaborate with Brands and agencies to Create Impactful Results
       </p>
       <div className="container flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0 space-y-5 justify-center">
-        {data.map((item) => (
-          <div className="card p-3 text-left flex flex-col space-y-3 items-start bg-black-200 border border-[#393939] rounded-md ">
-            <div className="div lg:h-[10rem]  h-[5rem]">
-
-            </div>
-            <h1 className="text-base  font-semibold text-white">{item.title}</h1>
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="card p-3 text-left flex flex-col space-y-3 items-start bg-black-200 border border-[#393939] rounded-md "
+          >
+            <div className="div lg:h-[10rem]  h-[5rem]"></div>
+            <h1 className="text-base  font-semibold text-white">
+              {item.title}
+            </h1>
             <h1 className="text-sm font-light text-white">
               {item.description}
             </h1>
