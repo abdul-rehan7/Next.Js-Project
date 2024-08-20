@@ -20,7 +20,7 @@ export const TextGenerateEffect = ({
   const [wordsScope, animateWords] = useAnimate();
   const [paraScope, animatePara] = useAnimate();
   let wordsArray = words.split(" ");
-  let paraArray = para.split(" ");
+  let paraArray = para.split("  ");
 
   useEffect(() => {
     animateWords(
