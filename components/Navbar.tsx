@@ -8,10 +8,10 @@ const NewNav = () => {
 
   return (
     <>
-      <div className="bg-transparent border-b border-black-300/[0.3]  absolute z-[20] px-6 py-3 flex lg:justify-between justify-end  items-center w-full">
+      <div className="bg-transparent lg:border-b border-black-300/[0.3]  absolute z-[20] mx-7 py-4 flex lg:justify-between justify-end  items-center lg:w-[95vw] w-[85vw]">
         <div className="logo  hidden lg:flex items-center text-black-300 space-x-2  ">
           <IoIosMail className="border text-2xl p-[4px] rounded-sm border-black-300 " />
-          <a href="mailto:abdulrehan0317@gmail.com" className=" text-base">
+          <a href="mailto:abdulrehan0317@gmail.com" className="hover:text-[#e5e5e5] transition-all text-base">
             {" "}
             contact@rehan.co
           </a>

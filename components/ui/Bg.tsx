@@ -19,7 +19,7 @@ export function GridBackgroundDemo() {
           <div className="flex flex-col items-center space-y-2">
             <div className="logo">
               <img
-                className="rounded-full h-[6rem] w-[6rem] lg:h-[10rem] lg:w-[10rem]"
+                className="rounded-full h-[8rem] w-[8rem] lg:h-[10rem] lg:w-[10rem]"
                 src="/logo.png"
                 alt=""
               />
@@ -28,7 +28,7 @@ export function GridBackgroundDemo() {
             <a
               href="https://www.linkedin.com/in/abdul-rehan/"
               target="_blank"
-              className="cssbutton"
+              className="cssbutton lg:text-base text-xs"
             >
               Let&apos;s Connect
             </a>

@@ -28,14 +28,8 @@ export default function Projects() {
 
 const data = [
   {
-    icon: <FaDesktop />,
-    title: "Design & Creative",
-    description:
-      "Designing Interfaces that are intuitive, effiecient, and enjoyable to use",
-  },
-  {
-    icon: <FaPencilAlt />,
-    title: "UI/UX",
+    icon: <FaBolt />,
+    title: "Web Development",
     description:
       "Designing Interfaces that are intuitive, effiecient, and enjoyable to use",
   },
@@ -46,8 +40,14 @@ const data = [
       "Designing Interfaces that are intuitive, effiecient, and enjoyable to use",
   },
   {
-    icon: <FaBolt />,
-    title: "Development",
+    icon: <FaPencilAlt />,
+    title: "UI/UX",
+    description:
+      "Designing Interfaces that are intuitive, effiecient, and enjoyable to use",
+  },
+  {
+    icon: <FaDesktop />,
+    title: "Design & Creative",
     description:
       "Designing Interfaces that are intuitive, effiecient, and enjoyable to use",
   },
