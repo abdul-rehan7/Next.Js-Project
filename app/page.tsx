@@ -1,13 +1,13 @@
 'use client'
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { IoIosMail } from "react-icons/io";
 
 export default function Home() {
-  const [cursorX, setCursorX] = useState();
-  const [cursorY, setCursorY] = useState();
+  const [cursorX, setCursorX] = useState<number>(0); // Define state with number type
+  const [cursorY, setCursorY] = useState<number>(0);
   window.addEventListener("mousemove", (e) => {
     setCursorX(e.pageX - window.scrollX);
     setCursorY(e.pageY - window.scrollY);
