@@ -8,7 +8,7 @@ const NewNav = () => {
 
   return (
     <>
-      <div className="bg-transparent lg:border-b border-black-300/[0.3]  absolute z-[20] mx-7 py-4 flex lg:justify-between justify-end  items-center lg:w-[95vw] w-[85vw]">
+      <div className="fixed lg:absolute lg:mx-7 lg:px-0 lg:bg-transparent bg-black-200 lg:border-b border-black-300/[0.3]  z-[20]  px-7 py-4 flex lg:justify-between justify-end  items-center lg:w-[95vw] w-[100vw]">
         <div className="logo  hidden lg:flex items-center text-black-300 space-x-2  ">
           <IoIosMail className="border text-2xl p-[4px] rounded-sm border-black-300 " />
           <a href="mailto:abdulrehan0317@gmail.com" className=" transition-all text-base">
@@ -20,6 +20,7 @@ const NewNav = () => {
           className="cursor-pointer text-black-300 rounded lg:hidden"
           onClick={() => setVisible(true)} // Click handler to open the menu
         >
+       
           <div className="burger flex flex-col space-y-1">
             <div className="line bg-black-300 h-1 w-7 rounded-full"></div>
             <div className="line bg-black-300 h-1 w-7 rounded-full"></div>

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { useState, useEffect } from "react";
@@ -26,7 +26,17 @@ export default function Home() {
       className="flex  bg-black-200   flex-col items-center justify-between "
     >
       <Hero />
-      <div className="cursor h-12 w-12 bg-white z-[5000] fixed rounded-full" style={{left:cursorX + 'px', top:cursorY + 'px', mixBlendMode:"difference"}}></div>
+
+      <div
+        className="cursor lg:flex justify-center items-center hidden h-12 w-12 lg:bg-gray-400 z-[3000] fixed rounded-full"
+        style={{
+          left: cursorX + "px",
+          top: cursorY + "px",
+          mixBlendMode: "difference",
+        }}
+      >
+        <div className="bg-gray-200 w-8 h-8 rounded-full "></div>
+      </div>
       <div className="wrapper lg:w-[500%] w-[1500%] ">
         <div className="wrapper-track space-x-20 stack  lg:h-[10rem] h-[7rem] bg-black-200 flex  justify-between p-2 lg:p-10">
           <img
@@ -76,6 +86,7 @@ export default function Home() {
           <img className="card   lg:w-[20vw] w-[45vw]" src="/tail.svg" alt="" />
         </div>
       </div>
+    
       <div id="projects" className="bg-black-100 w-screen h-auto p-4 ">
         <Projects />
       </div>
