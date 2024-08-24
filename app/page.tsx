@@ -8,10 +8,18 @@ import { IoIosMail } from "react-icons/io";
 export default function Home() {
   const [cursorX, setCursorX] = useState<number>(0); // Define state with number type
   const [cursorY, setCursorY] = useState<number>(0);
-  window.addEventListener("mousemove", (e) => {
-    setCursorX(e.pageX - window.scrollX);
-    setCursorY(e.pageY - window.scrollY);
-  });
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setCursorX(e.pageX - window.scrollX);
+      setCursorY(e.pageY - window.scrollY);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove); // Cleanup event listener on component unmount
+    };
+  }, []);
   return (
     <main
       id="home"
