@@ -1,36 +1,71 @@
+'use client'
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import { useState } from "react";
+
 import { IoIosMail } from "react-icons/io";
 
 export default function Home() {
+  const [cursorX, setCursorX] = useState();
+  const [cursorY, setCursorY] = useState();
+  window.addEventListener("mousemove", (e) => {
+    setCursorX(e.pageX - window.scrollX);
+    setCursorY(e.pageY - window.scrollY);
+  });
   return (
-    <main id="home" className="flex  bg-black-200   flex-col items-center justify-between ">
+    <main
+      id="home"
+      className="flex  bg-black-200   flex-col items-center justify-between "
+    >
       <Hero />
+      <div className="cursor h-12 w-12 bg-white z-[5000] fixed rounded-full" style={{left:cursorX + 'px', top:cursorY + 'px', mixBlendMode:"difference"}}></div>
       <div className="wrapper lg:w-[500%] w-[1500%] ">
         <div className="wrapper-track space-x-20 stack  lg:h-[10rem] h-[7rem] bg-black-200 flex  justify-between p-2 lg:p-10">
-          <img className="card   lg:w-[20vw] w-[45vw]" src="/chakra.svg" alt="" />
+          <img
+            className="card   lg:w-[20vw] w-[45vw]"
+            src="/chakra.svg"
+            alt=""
+          />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/git.svg" alt="" />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/node.svg" alt="" />
-          <img className="card   lg:w-[20vw] w-[45vw]" src="/react.svg" alt="" />
+          <img
+            className="card   lg:w-[20vw] w-[45vw]"
+            src="/react.svg"
+            alt=""
+          />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/ts.svg" alt="" />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/next.svg" alt="" />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/tail.svg" alt="" />
-          <img className="card   lg:w-[20vw] w-[45vw]" src="/chakra.svg" alt="" />
+          <img
+            className="card   lg:w-[20vw] w-[45vw]"
+            src="/chakra.svg"
+            alt=""
+          />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/git.svg" alt="" />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/node.svg" alt="" />
-          <img className="card   lg:w-[20vw] w-[45vw]" src="/react.svg" alt="" />
+          <img
+            className="card   lg:w-[20vw] w-[45vw]"
+            src="/react.svg"
+            alt=""
+          />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/ts.svg" alt="" />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/next.svg" alt="" />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/tail.svg" alt="" />
-          <img className="card   lg:w-[20vw] w-[45vw]" src="/chakra.svg" alt="" />
+          <img
+            className="card   lg:w-[20vw] w-[45vw]"
+            src="/chakra.svg"
+            alt=""
+          />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/git.svg" alt="" />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/node.svg" alt="" />
-          <img className="card   lg:w-[20vw] w-[45vw]" src="/react.svg" alt="" />
+          <img
+            className="card   lg:w-[20vw] w-[45vw]"
+            src="/react.svg"
+            alt=""
+          />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/ts.svg" alt="" />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/next.svg" alt="" />
           <img className="card   lg:w-[20vw] w-[45vw]" src="/tail.svg" alt="" />
-          
-         
         </div>
       </div>
       <div id="projects" className="bg-black-100 w-screen h-auto p-4 ">

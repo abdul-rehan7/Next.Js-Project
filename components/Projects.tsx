@@ -1,6 +1,15 @@
-import React from "react";
+"use client";
+import { useEffect } from "react";
 import { FaPencilAlt, FaDesktop, FaMobileAlt, FaBolt } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+
+// ..
+
 export default function Projects() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="lg:text-4xl text-xl font-medium flex flex-col lg:py-12 pb-7 items-center text-center">
       <p className=" lg:w-[60%]  bg-gradient-to-r py-12 from-[#ffffff] bg-clip-text text-transparent to-[#6b6b6b]">
@@ -9,6 +18,8 @@ export default function Projects() {
       <div className="container flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0 space-y-5 justify-center">
         {data.map((item, index) => (
           <div
+            data-aos="zoom-in"
+            data-aos-duration="300"
             key={index}
             className=" p-3 lg:p-4 text-left flex flex-col space-y-3 items-start bg-black-200 border border-[#393939] rounded-md "
           >
