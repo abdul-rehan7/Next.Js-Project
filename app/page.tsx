@@ -1,6 +1,7 @@
 "use client";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
+import Resume from "@/components/Resume";
 import { useState, useEffect } from "react";
 
 import { IoIosMail } from "react-icons/io";
@@ -86,15 +87,19 @@ export default function Home() {
           <img className="card   lg:w-[20vw] w-[45vw]" src="/tail.svg" alt="" />
         </div>
       </div>
-    
-      <div id="projects" className="bg-black-100 w-screen h-auto p-4 ">
+
+      <div id="projects" className="w-auto bg-black-100 h-auto py-4 px-10">
         <Projects />
+      </div>
+      <div className="bg-black-100">
+
+      <Resume />
       </div>
       <div
         id="about"
         className="bg-black-100 lg:pt-20 pt-16  lg:pb-20 pb-16 flex flex-col items-center border-t border-black-200 w-screen  "
       >
-        <div className=" lg:w-[45%] w-[85%] text-center py-12 bg-gradient-to-r lg:text-6xl text-3xl font-semibold  from-[#ffffff] bg-clip-text text-transparent to-[#6b6b6b]">
+        <div className=" lg:w-[45%] w-[85%] text-center py-12 bg-gradient-to-r lg:text-6xl text-3xl font-semibold  from-[#ffffff] bg-clip-text text-transparent to-[rgb(107,107,107)]">
           Tell me about Your Next Project
         </div>
         <div>

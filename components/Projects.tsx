@@ -11,12 +11,13 @@ export default function Projects() {
     AOS.init();
   }, []);
   return (
-    <div className="lg:text-4xl text-xl font-medium flex flex-col lg:py-12 pb-7 items-center text-center">
+    <div className="lg:text-4xl  text-xl font-medium flex flex-col lg:py-16 pb-10 items-center text-center">
+   
       <p className=" lg:w-[60%]  bg-gradient-to-r py-12 from-[#ffffff] bg-clip-text text-transparent to-[#6b6b6b]">
         Collaborate with Brands and agencies to Create Impactful Results
       </p>
 
-      <div className="container flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0 space-y-5 justify-center">
+      <div className=" flex flex-col lg:flex-row lg:space-x-4 lg:space-y-0 space-y-5 justify-center">
         {data.map((item, index) => (
           <div
             data-aos="zoom-in"
