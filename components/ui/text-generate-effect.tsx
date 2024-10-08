@@ -77,7 +77,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={para + idx}
-              className="font-medium lg:text-xl text-xs leading-snug tracking-wide text-black-200 opacity-0"
+              className="font-medium bg-gray-300 px-4 py-1 rounded-full lg:text-xl text-xs leading-snug tracking-wide text-black-200 opacity-0"
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
@@ -91,7 +91,7 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn("font-bold source-serif-4-mine", className)}>
       <div >
         <div className="flex items-center  text-center justify-center flex-col space-y-7  ">
           <div className="flex flex-col items-center space-y-4">

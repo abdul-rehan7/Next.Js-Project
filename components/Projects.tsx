@@ -13,7 +13,7 @@ export default function Projects() {
   return (
     <div className="lg:text-4xl  text-xl font-medium flex flex-col lg:py-16 pb-10 items-center text-center">
    
-      <p className=" lg:w-[60%]  bg-gradient-to-r py-12 from-[#ffffff] bg-clip-text text-transparent to-[#6b6b6b]">
+      <p className=" lg:w-[60%]  bg-gradient-to-r py-12 from-black-200/[0.7] bg-clip-text text-transparent to-black-200/[0.9]">
         Collaborate with Brands and agencies to Create Impactful Results
       </p>
 

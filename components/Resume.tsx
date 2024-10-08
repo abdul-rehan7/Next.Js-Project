@@ -11,9 +11,9 @@ export default function Resume() {
     <div className="w-full py-14 px-4 flex flex-col lg:flex-row lg:justify-center lg:space-x-7 space-y-16 ">
       <div
         data-aos="fade-up"
-        className=" lg:w-[40%] lg:h-[32rem]  bg-black-200 hover:bg-[#333333] transition-all text-black-300 p-4"
+        className=" lg:w-[40%] lg:h-[32rem]  bg-black-200/[0.9] hover:bg-[#333333] transition-all text-black-300 p-4"
       >
-        <h1 className="lg:-mt-[11%] text-white -mt-[14%] lg:text-5xl text-3xl text-left font-semibold">
+        <h1 className="lg:-mt-[11%] -mt-[14%] lg:text-5xl text-3xl text-left font-semibold text-black-200">
           Education
         </h1>
         <div className="items  py-7 flex flex-col space-y-5">

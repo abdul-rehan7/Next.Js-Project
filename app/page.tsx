@@ -99,14 +99,14 @@ export default function Home() {
         id="about"
         className="bg-black-100 lg:pt-20 pt-16  lg:pb-20 pb-16 flex flex-col items-center border-t border-black-200 w-screen  "
       >
-        <div className=" lg:w-[45%] w-[85%] text-center py-12 bg-gradient-to-r lg:text-6xl text-3xl font-semibold  from-[#ffffff] bg-clip-text text-transparent to-[rgb(107,107,107)]">
+        <div className=" lg:w-[45%] w-[85%] text-center py-12 bg-gradient-to-r lg:text-6xl text-3xl font-semibold  from-black-200/[0.6] bg-clip-text text-transparent to-black-200">
           Tell me about Your Next Project
         </div>
         <div>
           <a
             href="https://www.linkedin.com/in/abdul-rehan/"
             target="_blank"
-            className=" text-black-300 text-sm border border-black-300 bg-black-200 py-2 px-4 rounded-md flex justify-between items-center"
+            className=" text-black-300 text-sm border border-black-300 bg-black-200 py-2 px-4 rounded-full flex justify-between items-center"
           >
             Get in Touch <IoIosMail className="lg:text-2xl text-sm ml-2  " />
           </a>
