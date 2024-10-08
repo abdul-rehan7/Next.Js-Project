@@ -29,14 +29,14 @@ export default function Home() {
       <Hero />
 
       <div
-        className="cursor lg:flex justify-center items-center hidden h-12 w-12 lg:bg-gray-400 z-[3000] fixed rounded-full"
+        className="cursor lg:flex justify-center items-center hidden h-8 w-8 lg:bg-gray-400 z-[3000] fixed rounded-full"
         style={{
           left: cursorX + "px",
           top: cursorY + "px",
-          mixBlendMode: "difference",
+          mixBlendMode:"normal"
         }}
       >
-        <div className="bg-gray-200 w-8 h-8 rounded-full "></div>
+        <div className="bg-gray-200 w-4 h-4 rounded-full "></div>
       </div>
       <div className="wrapper lg:w-[500%] w-[1500%] ">
         <div className="wrapper-track space-x-20 stack  lg:h-[10rem] h-[7rem] bg-black-200 flex  justify-between p-2 lg:p-10">

@@ -18,7 +18,7 @@ export function GridBackgroundDemo() {
 
       <div className="z-[10] p-24 justify-center items-center lg:text-left text-center h-full lg:pt-0 pt-28  w-screen lg:p-0 flex flex-col lg:flex-row ">
         <div className="first  lg:p-0 p-4 flex flex-col  w-[90vw] lg:w-[55vw] lg:h-[60vh] h-auto ">
-          <div className="flex flex-col items-center space-y-2">
+          <div className="flex flex-col items-center space-y-5">
             <div className="logo">
               <img
                 className="rounded-full  h-[8rem] w-[8rem] lg:h-[10rem] lg:w-[10rem]"

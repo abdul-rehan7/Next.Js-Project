@@ -8,39 +8,39 @@ const NewNav = () => {
 
   return (
     <>
-      <div className="fixed lg:absolute lg:mx-7 lg:px-0 lg:bg-transparent bg-black-200 lg:border-b border-black-300/[0.3]  z-[20]  px-7 py-4 flex lg:justify-between justify-end  items-center lg:w-[95vw] w-[100vw]">
-        <div className="logo  hidden lg:flex items-center text-black-300 space-x-2  ">
-          <IoIosMail className="border text-2xl p-[4px] rounded-sm border-black-300 " />
+      <div className="fixed lg:absolute lg:mx-7 lg:px-0 lg:bg-transparent bg-black-100 lg:border-b border-black-200/[0.3]  z-[20]  px-7 py-4 flex lg:justify-between justify-end  items-center lg:w-[95vw] w-[100vw]">
+        <div className="logo  hidden lg:flex items-center text-black-200 space-x-2  ">
+          <IoIosMail className="border text-2xl p-[4px] rounded-sm border-black-200 " />
           <a href="mailto:abdulrehan0317@gmail.com" className="transition-all text-base">
             {" "}
             contact@rehan.co
           </a>
         </div>
         <button
-          className="cursor-pointer text-black-300 rounded lg:hidden"
+          className="cursor-pointer text-black-200 rounded lg:hidden"
           onClick={() => setVisible(true)} // Click handler to open the menu
         >
        
           <div className="burger flex flex-col space-y-1">
-            <div className="line bg-black-300 h-1 w-7 rounded-full"></div>
-            <div className="line bg-black-300 h-1 w-7 rounded-full"></div>
-            <div className="line bg-black-300 h-1 w-7 rounded-full"></div>
+            <div className="line bg-black-200 h-1 w-7 rounded-full"></div>
+            <div className="line bg-black-200 h-1 w-7 rounded-full"></div>
+            <div className="line bg-black-200 h-1 w-7 rounded-full"></div>
           </div>
         </button>
         <div className="lg:flex hidden space-x-2 p-2">
-          <a href="#home" className="link text-black-300">
+          <a href="#home" className="link text-black-200">
             Home
           </a>
-          <span className="text-black-300 flex items-center">/</span>
-          <a href="#projects" className="link text-black-300">
+          <span className="text-black-200 flex items-center">/</span>
+          <a href="#projects" className="link text-black-200">
             Projects
           </a>
-          <span className="text-black-300 flex items-center">/</span>
-          <a href="#about" className="link text-black-300">
+          <span className="text-black-200 flex items-center">/</span>
+          <a href="#about" className="link text-black-200">
             About
           </a>
-          <span className="text-black-300 flex items-center">/</span>
-          <a href="#contact" className="link text-black-300">
+          <span className="text-black-200 flex items-center">/</span>
+          <a href="#contact" className="link text-black-200">
             Contact
           </a>
         </div>
