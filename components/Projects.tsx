@@ -11,9 +11,9 @@ export default function Projects() {
     AOS.init();
   }, []);
   return (
-    <div className="lg:text-4xl  text-xl font-medium flex flex-col lg:py-16 pb-10 items-center text-center">
+    <div className="lg:text-4xl  text-xl  flex flex-col lg:py-16 pb-10 items-center text-center">
    
-      <p className=" lg:w-[60%]  bg-gradient-to-r py-12 from-black-200/[0.7] bg-clip-text text-transparent to-black-200/[0.9]">
+      <p className=" source-serif-4-bold  lg:w-[60%]  bg-gradient-to-r py-12  text-black-200">
         Collaborate with Brands and agencies to Create Impactful Results
       </p>
 
@@ -23,13 +23,13 @@ export default function Projects() {
             data-aos="zoom-in"
             data-aos-duration="300"
             key={index}
-            className=" p-3 lg:p-4 text-left flex flex-col space-y-3 items-start bg-black-200 border border-[#393939] rounded-md "
+            className=" p-3 lg:p-4 text-left flex flex-col space-y-3 items-start bg-black-300 border border-black-200/[0.3] rounded-md "
           >
-            <div className="text-xl text-black-300/[0.5]">{item.icon}</div>
-            <h1 className="text-base  font-semibold text-black-300/[0.7]">
+            <div className="text-xl text-black-200/[0.8]">{item.icon}</div>
+            <h1 className="text-base  font-semibold text-black-200/[0.8]">
               {item.title}
             </h1>
-            <h1 className="text-sm font-light text-black-300/[0.7]">
+            <h1 className="text-sm font-light text-black-200/[0.8]">
               {item.description}
             </h1>
           </div>
