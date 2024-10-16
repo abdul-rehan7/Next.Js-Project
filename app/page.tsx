@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <main
       id="home"
-      className="flex  bg-black-200   flex-col items-center justify-between "
+      className="flex  bg-gray-200   flex-col items-center justify-between "
     >
       <Hero />
 
@@ -39,7 +39,7 @@ export default function Home() {
         <div className="bg-gray-200 w-4 h-4 rounded-full "></div>
       </div>
       <div className="wrapper lg:w-[500%] w-[1500%] ">
-        <div className="wrapper-track space-x-20 stack  lg:h-[10rem] h-[7rem] bg-black-200 flex  justify-between p-2 lg:p-10">
+        <div className="wrapper-track space-x-20 stack  lg:h-[10rem] h-[7rem] bg-gray-200 flex  justify-between p-2 lg:p-10">
           <img
             className="card   lg:w-[20vw] w-[45vw]"
             src="/chakra.svg"
