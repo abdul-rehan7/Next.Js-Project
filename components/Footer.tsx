@@ -16,16 +16,16 @@ const Footer = () => {
         </span>
         <div className="socials lg:justify-end justify-center flex space-x-3">
           <a href="https://github.com/abdul-rehan7" target="_blank">
-            <FaGithub className="p-2  hover:text-black-100 hover:bg-black-300 transition-all cursor-pointer text-4xl rounded-md border text-black-200 border-black-200" />
+            <FaGithub className="p-2  hover:text-black-100 hover:bg-black-200 transition-all cursor-pointer text-4xl rounded-md border text-black-200 border-black-200" />
           </a>
           <a href="https://x.com/mirza_rehan76" target="_blank">
-            <FaTwitter className="p-2  hover:text-black-100 hover:bg-black-300 transition-all cursor-pointer text-4xl rounded-md border text-black-200 border-black-200" />
+            <FaTwitter className="p-2  hover:text-black-100 hover:bg-black-200 transition-all cursor-pointer text-4xl rounded-md border text-black-200 border-black-200" />
           </a>
           <a href="https://www.linkedin.com/in/abdul-rehan/" target="_blank">
-            <FaLinkedin className="p-2  hover:text-black-100 hover:bg-black-300 transition-all cursor-pointer text-4xl rounded-md border text-black-200 border-black-200" />
+            <FaLinkedin className="p-2  hover:text-black-100 hover:bg-black-200 transition-all cursor-pointer text-4xl rounded-md border text-black-200 border-black-200" />
           </a>
           <a href="https://www.facebook.com/profile.php?id=100055767942968" target="_blank">
-            <FaFacebook className="p-2  hover:text-black-100 hover:bg-black-300 transition-all cursor-pointer text-4xl rounded-md border text-black-200 border-black-200" />
+            <FaFacebook className="p-2  hover:text-black-100 hover:bg-black-200 transition-all cursor-pointer text-4xl rounded-md border text-black-200 border-black-200" />
           </a>
         </div>
       </div>
