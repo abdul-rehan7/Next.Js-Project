@@ -150,39 +150,18 @@ body {
   border-radius: 10rem;
   border: 1px solid rgb(44, 44, 44);
   color: #ffffff;
+  background:#161616;
   transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-.cssbutton:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  @apply bg-black-200; /* Adjusted color for background */
-  transition: all 0.3s;
-  border-radius: 0.3rem;
-  z-index: -1;
-}
 
-.cssbutton:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #161616;
-  border-radius: 0.3rem;
-  z-index: -2;
-}
 
 .cssbutton:hover {
   color: #fff;
+  background:#161616e4;
 }
 
 .cssbutton:hover:before {

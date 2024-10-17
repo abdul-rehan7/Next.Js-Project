@@ -77,7 +77,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={para + idx}
-              className="font-medium bg-gray-300 px-4 py-1 rounded-full lg:text-xl text-xs leading-snug tracking-wide text-black-200 opacity-0"
+              className="font-medium bg-[#b9e2ff] px-4 py-1 rounded-full lg:text-xl text-xs leading-snug tracking-wide text-black-200 opacity-0"
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
