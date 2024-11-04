@@ -46,7 +46,7 @@ export default function Projects() {
             <p className="md:text-sm text-xs text-justify font-light">{item.Description}</p>
             <div className="skills grid md:grid-cols-3 grid-cols-3 md:gap-3 gap-2 ">
               {item.skills.map((item)=>(
-              <span className="bg-gray-200 text-center md:text-sm text-[0.6rem] px-1 md:px-2 md:py-2 rounded-md ">{item}</span>
+              <span key={item} className="bg-gray-200 text-center md:text-sm text-[0.6rem] px-1 md:px-2 md:py-2 rounded-md ">{item}</span>
               ))}
             </div>
           </div>
