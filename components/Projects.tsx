@@ -40,7 +40,7 @@ export default function Projects() {
       </p>
       <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-16 gap-4  ">
         {projects.map((item) => (
-          <div className="bg-black-300 space-y-3 border text-left border-black-200/[0.3] p-2 md:w-[30vw]">
+          <div key={item.name} className="bg-black-300 space-y-3 border text-left border-black-200/[0.3] p-2 md:w-[30vw]">
             <img src={item.img} alt={item.name} className="lg:h-[20rem] lg:w-[25rem]" />
             <p className="capitalize md:text-xl text-base font-bold"> {item.name}</p>
             <p className="md:text-sm text-xs text-justify font-light">{item.Description}</p>
