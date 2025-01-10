@@ -43,7 +43,7 @@ export default function Resume() {
         </h1>
         <div className="items  py-7 flex flex-col space-y-5">
           <p className="uppercase lg:text-base text-sm tracking-wider font-medium ">
-            Senior Student
+            Student Leader
           </p>
           <p className="lg:text-base text-xs">
             Governor Sindh Initiative for GenAI, Web3, and Metaverse Feb 2024 -
