@@ -13,7 +13,7 @@ export default function Resume() {
         data-aos="fade-up"
         className=" lg:w-[40%] lg:h-[32rem] rounded-md  bg-black-300 border broder-black-200/[0.7] hover:bg-gray-200 transition-all text-black-200 p-4"
       >
-        <h1 className="lg:-mt-[11%] -mt-[14%] lg:text-5xl text-3xl text-left font-semibold text-black-200">
+        <h1 className="lg:-mt-[15%] -mt-[14%] lg:text-5xl text-3xl text-left font-semibold text-black-200">
           Education
         </h1>
         <div className="items  py-7 flex flex-col space-y-5">
@@ -38,7 +38,7 @@ export default function Resume() {
         data-aos="fade-up"
         className=" lg:w-[40%] lg:h-[32rem] rounded-md  bg-black-300 border broder-black-200/[0.7]  mt-28 text-black-200 hover:bg-gray-200 transition-all p-4"
       >
-        <h1 className="lg:-mt-[11%] text-black-200 -mt-[14%] lg:text-5xl text-3xl text-left font-semibold">
+        <h1 className="lg:-mt-[15%] text-black-200 -mt-[14%] lg:text-5xl text-3xl text-left font-semibold">
           Experience
         </h1>
         <div className="items  py-7 flex flex-col space-y-5">
