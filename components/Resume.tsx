@@ -8,7 +8,7 @@ export default function Resume() {
     AOS.init();
   }, []);
   return (
-    <div className="w-full py-14 px-4 flex flex-col lg:flex-row lg:justify-center lg:space-x-7 space-y-16 ">
+    <div className="w-[100vw] py-14 px-4 flex flex-col lg:flex-row lg:justify-center lg:space-x-7 space-y-16 ">
       <div
         data-aos="fade-up"
         className=" lg:w-[40%] lg:h-[32rem] rounded-md  bg-black-300 border broder-black-200/[0.7] hover:bg-gray-200 transition-all text-black-200 p-4"
