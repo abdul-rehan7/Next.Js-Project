@@ -28,19 +28,19 @@ const NewNav = () => {
           </div>
         </button>
         <div className="lg:flex hidden space-x-2 p-2">
-          <a href="#home" className="link text-black-200">
+          <a href="#home" className="link text-black-200 hover:text-gray-500">
             Home
           </a>
           <span className="text-black-200 flex items-center">/</span>
-          <a href="#projects" className="link text-black-200">
+          <a href="#projects" className="link text-black-200 hover:text-gray-500">
             Projects
           </a>
           <span className="text-black-200 flex items-center">/</span>
-          <a href="#about" className="link text-black-200">
+          <a href="#about" className="link text-black-200 hover:text-gray-500">
             About
           </a>
           <span className="text-black-200 flex items-center">/</span>
-          <a href="#contact" className="link text-black-200">
+          <a href="#contact" className="link text-black-200 hover:text-gray-500">
             Contact
           </a>
         </div>

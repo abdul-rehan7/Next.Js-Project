@@ -93,7 +93,7 @@ export default function Home() {
       </div>
       <div className="bg-black-100">
 
-      <Resume />
+      {/* <Resume /> */}
       </div>
       <div
         id="about"
