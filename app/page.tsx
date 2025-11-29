@@ -2,42 +2,16 @@
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
-import { useState, useEffect } from "react";
 
 import { IoIosMail } from "react-icons/io";
 
 export default function Home() {
-  const [cursorX, setCursorX] = useState<number>(0); // Define state with number type
-  const [cursorY, setCursorY] = useState<number>(0);
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setCursorX(e.pageX - window.scrollX);
-      setCursorY(e.pageY - window.scrollY);
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove); // Cleanup event listener on component unmount
-    };
-  }, []);
   return (
     <main
       id="home"
       className="flex  bg-gray-200   flex-col items-center justify-between "
     >
       <Hero />
-
-      <div
-        className="cursor lg:flex justify-center items-center hidden h-8 w-8 lg:bg-gray-400 z-[3000] fixed rounded-full"
-        style={{
-          left: cursorX + "px",
-          top: cursorY + "px",
-          mixBlendMode:"normal"
-        }}
-      >
-        <div className="bg-gray-200 w-4 h-4 rounded-full "></div>
-      </div>
       <div className="wrapper lg:w-[500%] w-[1500%] ">
         <div className="wrapper-track space-x-20 stack  lg:h-[10rem] h-[7rem] bg-gray-200 flex  justify-between p-2 lg:p-10">
           <img
