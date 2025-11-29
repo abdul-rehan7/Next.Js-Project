@@ -62,32 +62,65 @@ export default function Projects() {
       <p className="font-bold bg-gradient-to-r py-12  text-black-200">
         PROJECTS
       </p>
-      <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-16 gap-4  ">
-        {projects.map((item) => (
-  <div key={item.id} className="bg-black-300 space-y-3 border text-left border-black-200/[0.3] p-2 md:w-[30vw]">
+      <div className="grid md:grid-cols-2 grid-cols-1 lg:gap-16 gap-4 relative">
+        {projects.map((item, index) => (
+  <div 
+    key={item.id} 
+    className="group relative shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 rounded-2xl overflow-hidden md:w-[30vw] p-1"
+    style={{background: 'linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899)'}}
+    data-aos="fade-up"
+    data-aos-delay={index * 100}
+  >
+    <div className="bg-white rounded-xl h-full overflow-hidden">
+    {/* Gradient overlay */}
+    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
     
-    <img src={item.image} alt={item.title} className="lg:h-[20rem] lg:w-full" />
-
-    <p className="capitalize md:text-xl text-base font-bold">
-      {item.title}
-    </p>
-
-    <p className="md:text-sm text-xs text-justify font-light">
-      {item.description}
-    </p>
-
-    <div className="skills grid md:grid-cols-3 grid-cols-3 md:gap-3 gap-2">
-      {item.techStack.map((tech) => (
-        <span key={tech} className="bg-gray-200 text-center md:text-sm text-[0.6rem] px-1 md:px-2 md:py-2 rounded-md">
-          {tech}
-        </span>
-      ))}
+    <div className="relative overflow-hidden rounded-t-2xl">
+      <img 
+        src={item.image} 
+        alt={item.title} 
+        className="lg:h-[20rem] w-full h-48 object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1 transform-gpu" 
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
     </div>
-      <Link className="text-sm md:text-base flex space-x-3 items-center border bg-blue-200 hover:bg-transparent transition-all border-blue-400 rounded-md p-2 w-auto justify-center" href={item.projectUrl} target="_blank">
-      <p>Live Preview </p><CiLocationArrow1/>
+    
+    <div className="relative p-6 space-y-4">
+      <h3 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent transition-all duration-300">
+        {item.title}
+      </h3>
+
+      <p className="text-gray-600 md:text-base text-sm leading-relaxed">
+        {item.description}
+      </p>
+
+      <div className="flex flex-wrap gap-2">
+        {item.techStack.slice(0, 4).map((tech, techIndex) => (
+          <span 
+            key={tech} 
+            className="inline-flex items-center px-3 py-1.5 text-xs font-medium bg-gradient-to-r from-gray-100 to-gray-50 text-gray-700 rounded-full border border-gray-200 hover:from-blue-50 hover:to-purple-50 hover:border-blue-200 transition-all duration-300 hover:scale-105"
+            style={{ animationDelay: `${techIndex * 100}ms` }}
+          >
+            {tech}
+          </span>
+        ))}
+        {item.techStack.length > 4 && (
+          <span className="inline-flex items-center px-3 py-1.5 text-xs font-medium bg-gray-100 text-gray-500 rounded-full border border-gray-200">
+            +{item.techStack.length - 4} more
+          </span>
+        )}
+      </div>
+
+      <Link 
+        className="group/btn relative inline-flex items-center justify-center gap-2 w-full mt-4 px-6 py-3 text-sm font-semibold text-white bg-black rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-300 overflow-hidden" 
+        href={item.projectUrl} 
+        target="_blank"
+      >
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
+        <span className="relative z-10">View Project</span>
+        <CiLocationArrow1 className="relative z-10 w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1"/>
       </Link>
-
-
+    </div>
+    </div>
   </div>
 ))}
 

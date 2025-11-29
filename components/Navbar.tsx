@@ -8,9 +8,9 @@ const NewNav = () => {
 
   return (
     <>
-      <div className="fixed lg:absolute lg:mx-7 lg:px-0 lg:bg-transparent bg-black-100 lg:border-b border-black-200/[0.3]  z-[20]  px-7 py-4 flex lg:justify-between justify-end  items-center lg:w-[95vw] w-[100vw]">
-        <div className="logo  hidden lg:flex items-center text-black-200 space-x-2  ">
-          <IoIosMail className="border text-2xl p-[4px] rounded-sm border-black-200 " />
+      <div className="fixed lg:absolute lg:mx-7 lg:px-0 lg:bg-transparent bg-black-100 lg:border-b border-black-200/[0.3] z-[20] px-7 py-4 flex lg:justify-between justify-end items-center lg:w-[95vw] w-[100vw]">
+        <div className="logo hidden lg:flex items-center text-black-200 space-x-2">
+          <IoIosMail className="border text-2xl p-[4px] rounded-sm border-black-200" />
           <a href="mailto:abdulrehan0317@gmail.com" className="transition-all text-base">
             {" "}
             contact@rehan.co

@@ -2,16 +2,37 @@
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
-
+import { useEffect } from "react";
 import { IoIosMail } from "react-icons/io";
 
 export default function Home() {
+  useEffect(() => {
+    const updateScrollProgress = () => {
+      const scrolled = window.scrollY;
+      const maxHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrolled / maxHeight) * 100;
+      
+      const progressBar = document.querySelector('.scroll-indicator');
+      if (progressBar) {
+        (progressBar as HTMLElement).style.width = `${progress}%`;
+      }
+    };
+
+    window.addEventListener('scroll', updateScrollProgress);
+    return () => window.removeEventListener('scroll', updateScrollProgress);
+  }, []);
   return (
-    <main
-      id="home"
-      className="flex  bg-gray-200   flex-col items-center justify-between "
-    >
-      <Hero />
+    <>
+      {/* Scroll Progress Indicator */}
+      <div className="fixed top-0 left-0 w-full h-1 bg-gray-200 z-50">
+        <div className="h-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition-all duration-300 scroll-indicator"></div>
+      </div>
+      
+      <main
+        id="home"
+        className="flex bg-gray-200 flex-col items-center justify-between relative"
+      >
+        <Hero />
       <div className="wrapper lg:w-[500%] w-[1500%] ">
         <div className="wrapper-track space-x-20 stack  lg:h-[10rem] h-[7rem] bg-gray-200 flex  justify-between p-2 lg:p-10">
           <img
@@ -87,5 +108,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+    </>
   );
 }
